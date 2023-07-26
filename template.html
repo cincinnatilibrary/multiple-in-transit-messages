@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Intransit Messages Report</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #91D6AC;
+    }
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Multiple Intransit Messages Report</h1>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Item Record Number</th>
+      <th>Item Barcode</th>
+      <th>Messages</th>
+    </tr>
+    <!-- Assuming `results` is a variable that contains the query result -->
+    <!-- Each `result` is a dictionary with keys 'item_record_num', 'item_barcode', 'messages' -->
+    <!-- The 'messages' value is a list of messages for the item -->
+    {% for result in results %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ result['item_record_num'] }}</td>
+        <td>{{ result['item_barcode'] }}</td>
+        <td>
+          <ul>
+            {% for message in result['messages'] %}
+              <li>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

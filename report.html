@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Intransit Messages Report</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #91D6AC;
+    }
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Multiple Intransit Messages Report</h1>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Item Record Number</th>
+      <th>Item Barcode</th>
+      <th>Messages</th>
+    </tr>
+    <!-- Assuming `results` is a variable that contains the query result -->
+    <!-- Each `result` is a dictionary with keys 'item_record_num', 'item_barcode', 'messages' -->
+    <!-- The 'messages' value is a list of messages for the item -->
+    
+      <tr>
+        <td>1</td>
+        <td>i1746302a</td>
+        <td>A000033006792</td>
+        <td>
+          <ul>
+            
+              <li>Thu Apr 20 2023 02:38PM: IN TRANSIT from xkmeale to 1lj  . Fri Jun 30 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 03:48PM: IN TRANSIT from xbasubteam1 to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>2</td>
+        <td>i2186896a</td>
+        <td>0909712258013</td>
+        <td>
+          <ul>
+            
+              <li>Fri Oct 28 2022 08:55AM: IN TRANSIT from xmcollin to 2sa  </li>
+            
+              <li>Tue Jul 25 2023 09:44AM: IN TRANSIT from xmcollin to 2sa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>3</td>
+        <td>i2730487a</td>
+        <td>1031744746011</td>
+        <td>
+          <ul>
+            
+              <li>Thu May 04 2023 08:48AM: IN TRANSIT from xtgoyert to 3ra  </li>
+            
+              <li>Tue Jul 25 2023 04:52PM: IN TRANSIT from xtgoyert to 3ra  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>4</td>
+        <td>i3098248a</td>
+        <td>0925862146014</td>
+        <td>
+          <ul>
+            
+              <li>Tue Jul 25 2023 03:31PM: IN TRANSIT from xctaylor to 3aa  </li>
+            
+              <li>Tue Jul 25 2023 03:32PM: IN TRANSIT from xkmushab to 3aa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>5</td>
+        <td>i3112779a</td>
+        <td>A000005811773</td>
+        <td>
+          <ul>
+            
+              <li>Tue Apr 12 2022 02:16PM: IN TRANSIT from xtbarr to 1paff</li>
+            
+              <li>Fri Jul 21 2023 04:55PM: IN TRANSIT from xspresle to 1paff</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>6</td>
+        <td>i3466825a</td>
+        <td>0964496602019</td>
+        <td>
+          <ul>
+            
+              <li>Mon May 01 2023 01:32PM: IN TRANSIT from xkheinde to 1pac . Tue Jul 11 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Mon Jul 24 2023 05:26PM: IN TRANSIT from xafranci to 1pac </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>7</td>
+        <td>i3487466a</td>
+        <td>7700365251022</td>
+        <td>
+          <ul>
+            
+              <li>Thu May 18 2023 08:29AM: IN TRANSIT from xnwardla to 1fa  </li>
+            
+              <li>Sat Jul 22 2023 02:44PM: IN TRANSIT from xseck to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>8</td>
+        <td>i3540642a</td>
+        <td>1033628958019</td>
+        <td>
+          <ul>
+            
+              <li>Fri Jul 14 2023 10:11AM: IN TRANSIT from xckuhl to 2sa  </li>
+            
+              <li>Mon Jul 24 2023 10:37AM: IN TRANSIT from xkniemey to 2sa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>9</td>
+        <td>i3624927a</td>
+        <td>0967159048016</td>
+        <td>
+          <ul>
+            
+              <li>Fri Mar 24 2023 08:33AM: IN TRANSIT from xahancoc to 1lj  </li>
+            
+              <li>Mon Jul 24 2023 01:57PM: IN TRANSIT from xrmcknig to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>10</td>
+        <td>i3653941a</td>
+        <td>1044498249017</td>
+        <td>
+          <ul>
+            
+              <li>Wed Jun 28 2023 08:32AM: IN TRANSIT from xalewis to 2ea  </li>
+            
+              <li>Mon Jul 24 2023 10:31AM: IN TRANSIT from xkpeak to 2ea  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>11</td>
+        <td>i3859467a</td>
+        <td>0996191860013</td>
+        <td>
+          <ul>
+            
+              <li>Thu May 04 2023 07:21PM: IN TRANSIT from xabender to 1pacx. Fri Jul 14 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Mon Jul 24 2023 09:34AM: IN TRANSIT from xctaylor to 1pacx</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>12</td>
+        <td>i4054927a</td>
+        <td>0974052348063</td>
+        <td>
+          <ul>
+            
+              <li>Fri Jul 07 2023 08:34AM: IN TRANSIT from xbschnie to 1lj  </li>
+            
+              <li>Tue Jul 25 2023 12:03PM: IN TRANSIT from xesulliv to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>13</td>
+        <td>i4071857a</td>
+        <td>A000028751352</td>
+        <td>
+          <ul>
+            
+              <li>Thu Jul 13 2023 08:37AM: IN TRANSIT from xdclark to 3aa  </li>
+            
+              <li>Tue Jul 25 2023 07:13PM: IN TRANSIT from xhsuddle to 3aa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>14</td>
+        <td>i4151815a</td>
+        <td>A000011893476</td>
+        <td>
+          <ul>
+            
+              <li>Thu Jul 20 2023 08:23AM: IN TRANSIT from xlseller to 1lj  </li>
+            
+              <li>Mon Jul 24 2023 02:36PM: IN TRANSIT from xcwillia2 to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>15</td>
+        <td>i4199753a</td>
+        <td>1037031541015</td>
+        <td>
+          <ul>
+            
+              <li>Sat Apr 08 2023 02:57PM: IN TRANSIT from xghammit to osjnf. Sun Jun 18 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 03:48PM: IN TRANSIT from xbasubteam1 to osjnf</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>16</td>
+        <td>i4425309a</td>
+        <td>1028280848011</td>
+        <td>
+          <ul>
+            
+              <li>Thu Jun 22 2023 08:23AM: IN TRANSIT from xchardt to 1lj  </li>
+            
+              <li>Fri Jul 21 2023 11:02AM: IN TRANSIT from xchardt to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>17</td>
+        <td>i4491877a</td>
+        <td>0980855848027</td>
+        <td>
+          <ul>
+            
+              <li>Tue May 09 2023 08:44AM: IN TRANSIT from xaward to 1lj  </li>
+            
+              <li>Tue Jul 25 2023 10:41AM: IN TRANSIT from xmhartle to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>18</td>
+        <td>i4556410a</td>
+        <td>1048714348016</td>
+        <td>
+          <ul>
+            
+              <li>Fri Mar 24 2023 08:33AM: IN TRANSIT from xahancoc to 1lj  </li>
+            
+              <li>Mon Jul 24 2023 01:49PM: IN TRANSIT from xrmcknig to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>19</td>
+        <td>i4721984a</td>
+        <td>1619869-1001</td>
+        <td>
+          <ul>
+            
+              <li>Wed Jul 26 2023 11:06AM: IN TRANSIT from xbschnie to 1pacx</li>
+            
+              <li>Wed Jul 26 2023 11:06AM: IN TRANSIT from xmstower to 1pacx</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>20</td>
+        <td>i4722735a</td>
+        <td>A000005489984</td>
+        <td>
+          <ul>
+            
+              <li>Tue Jul 18 2023 11:13AM: IN TRANSIT from xcvsubteam1 to osal </li>
+            
+              <li>Tue Jul 18 2023 11:13AM: IN TRANSIT from xthill to osal </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>21</td>
+        <td>i5062984a</td>
+        <td>1699423-1001</td>
+        <td>
+          <ul>
+            
+              <li>Thu Jun 22 2023 08:03AM: IN TRANSIT from xdedward to 1fa  </li>
+            
+              <li>Mon Jul 24 2023 09:01AM: IN TRANSIT from xhtorok to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>22</td>
+        <td>i5609822a</td>
+        <td>A000033126079</td>
+        <td>
+          <ul>
+            
+              <li>Mon Apr 03 2023 05:43PM: IN TRANSIT from xmcollin to 2ttab. Tue Jun 13 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 03:48PM: IN TRANSIT from xbasubteam1 to 2ttab</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>23</td>
+        <td>i5752801a</td>
+        <td>1714253-1002</td>
+        <td>
+          <ul>
+            
+              <li>Thu Apr 20 2023 09:30AM: IN TRANSIT from xcmccune to 1fa  . Fri Jun 30 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 09:55AM: IN TRANSIT from xmstarr to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>24</td>
+        <td>i5923650a</td>
+        <td>1689507-1002</td>
+        <td>
+          <ul>
+            
+              <li>Mon Jul 17 2023 09:00AM: IN TRANSIT from xmallan to 1fa  </li>
+            
+              <li>Fri Jul 21 2023 01:34PM: IN TRANSIT from xplsubteam1 to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>25</td>
+        <td>i6008691a</td>
+        <td>1799616-1001</td>
+        <td>
+          <ul>
+            
+              <li>Tue Apr 25 2023 10:14AM: IN TRANSIT from xmcollin to 1lj  . Wed Jul 05 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 03:48PM: IN TRANSIT from xbasubteam1 to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>26</td>
+        <td>i6441349a</td>
+        <td>1728315-1001</td>
+        <td>
+          <ul>
+            
+              <li>Tue May 02 2023 07:26PM: IN TRANSIT from xabrock to 1lj  . Wed Jul 12 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 03:47PM: IN TRANSIT from xbasubteam1 to 1lj  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>27</td>
+        <td>i6722421a</td>
+        <td>A000024745606</td>
+        <td>
+          <ul>
+            
+              <li>Mon May 08 2023 03:02PM: IN TRANSIT from xrhyman to 1fa  </li>
+            
+              <li>Mon Jul 24 2023 01:12PM: IN TRANSIT from xjpeak to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>28</td>
+        <td>i6768388a</td>
+        <td>A000031607518</td>
+        <td>
+          <ul>
+            
+              <li>Sat Jul 16 2022 01:20PM: IN TRANSIT from xkdettin to 2kt  </li>
+            
+              <li>Tue Jul 25 2023 12:26PM: IN TRANSIT from xkdettin to 2kt  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>29</td>
+        <td>i6805522a</td>
+        <td>A000033855461</td>
+        <td>
+          <ul>
+            
+              <li>Sat Jul 15 2023 09:18AM: IN TRANSIT from xlmuench to osjf </li>
+            
+              <li>Tue Jul 25 2023 09:15AM: IN TRANSIT from xlmuench to osjf </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>30</td>
+        <td>i7191165a</td>
+        <td>A000037648128</td>
+        <td>
+          <ul>
+            
+              <li>Thu Apr 06 2023 03:56PM: IN TRANSIT from xmcollin to 1fa  . Fri Jun 16 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 03:48PM: IN TRANSIT from xbasubteam1 to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>31</td>
+        <td>i7220738a</td>
+        <td>A000034999250</td>
+        <td>
+          <ul>
+            
+              <li>Fri Jul 07 2023 08:30AM: IN TRANSIT from BATemplate to 1lj  </li>
+            
+              <li>Fri Jun 23 2023 08:30AM: IN TRANSIT from BATemplate to 1lj</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>32</td>
+        <td>i7367870a</td>
+        <td>A000036476240</td>
+        <td>
+          <ul>
+            
+              <li>Wed Jun 07 2023 08:31AM: IN TRANSIT from xalewis to 1fa  </li>
+            
+              <li>Mon Jul 24 2023 07:14AM: IN TRANSIT from xdcsort1 to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>33</td>
+        <td>i7602696a</td>
+        <td>A000039482369</td>
+        <td>
+          <ul>
+            
+              <li>Wed Jun 07 2023 08:31AM: IN TRANSIT from xalewis to 1fa  </li>
+            
+              <li>Mon Jul 24 2023 07:14AM: IN TRANSIT from xdcsort1 to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>34</td>
+        <td>i7659113a</td>
+        <td>A000040111221</td>
+        <td>
+          <ul>
+            
+              <li>Mon Mar 27 2023 04:49PM: IN TRANSIT from xdpearso to 1padm. Wed Jul 05 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Tue Apr 25 2023 10:24AM: IN TRANSIT from xcgraham to 1padm</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>35</td>
+        <td>i8149969a</td>
+        <td>A000043787076</td>
+        <td>
+          <ul>
+            
+              <li>Thu Jan 05 2023 12:58PM: IN TRANSIT from xbatemp2 to 1pac . Fri Mar 17 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Mon Jul 24 2023 03:18PM: IN TRANSIT from xmdiallo to 1pac </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>36</td>
+        <td>i8194320a</td>
+        <td>A000047674460</td>
+        <td>
+          <ul>
+            
+              <li>Sat Mar 04 2023 01:35PM: IN TRANSIT from xkdenier to 1fa  </li>
+            
+              <li>Wed Jul 19 2023 03:37PM: IN TRANSIT from xkmoelle to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>37</td>
+        <td>i8306405a</td>
+        <td>A000044044154</td>
+        <td>
+          <ul>
+            
+              <li>Tue Jul 18 2023 03:14PM: IN TRANSIT from xlspragu to 3ra  </li>
+            
+              <li>Tue Jul 18 2023 03:14PM: IN TRANSIT from xatoole to 3ra  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>38</td>
+        <td>i8723757a</td>
+        <td>A000049617095</td>
+        <td>
+          <ul>
+            
+              <li>Thu Apr 20 2023 10:35AM: IN TRANSIT from xmcollin to 1fa  . Fri Jun 30 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 03:48PM: IN TRANSIT from xbasubteam1 to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>39</td>
+        <td>i9750856a</td>
+        <td>A000059670291</td>
+        <td>
+          <ul>
+            
+              <li>Mon Jul 24 2023 03:11PM: IN TRANSIT from xemiheli to osjnf</li>
+            
+              <li>Mon Jul 24 2023 03:10PM: IN TRANSIT from xdschrie to osjnf</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>40</td>
+        <td>i9773849a</td>
+        <td>A000058399320</td>
+        <td>
+          <ul>
+            
+              <li>Sat May 27 2023 08:33AM: IN TRANSIT from xalewis to osjsu</li>
+            
+              <li>Wed Jul 26 2023 11:05AM: IN TRANSIT from xkdenier to osjsu</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>41</td>
+        <td>i9913866a</td>
+        <td>A000060348036</td>
+        <td>
+          <ul>
+            
+              <li>Thu Jun 08 2023 08:25AM: IN TRANSIT from xchardt to 2njeb</li>
+            
+              <li>Tue Jul 25 2023 03:16PM: IN TRANSIT from xmgartne to 2njeb</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>42</td>
+        <td>i9995716a</td>
+        <td>A000061517001</td>
+        <td>
+          <ul>
+            
+              <li>Sat Apr 29 2023 02:46PM: IN TRANSIT from xjgardin to 1fa  . Sun Jul 09 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Tue Jul 25 2023 04:54PM: IN TRANSIT from xrlouder to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>43</td>
+        <td>i10079385a</td>
+        <td>A000061739639</td>
+        <td>
+          <ul>
+            
+              <li>Mon May 01 2023 05:49PM: IN TRANSIT from xsvander to 1padm. Tue Jul 11 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 11:38AM: IN TRANSIT from xsvander to 1padm</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>44</td>
+        <td>i10317036a</td>
+        <td>A000062655081</td>
+        <td>
+          <ul>
+            
+              <li>Wed Apr 05 2023 09:07AM: IN TRANSIT from xabrock to osjf . Thu Jun 15 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 03:47PM: IN TRANSIT from xbasubteam1 to osjf </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>45</td>
+        <td>i10536441a</td>
+        <td>A000066135494</td>
+        <td>
+          <ul>
+            
+              <li>Thu Jul 13 2023 08:28AM: IN TRANSIT from xccrusha to 1fa  </li>
+            
+              <li>Thu Jul 20 2023 04:10PM: IN TRANSIT from xmhaller to 1fa  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>46</td>
+        <td>i10623660a</td>
+        <td>A000067201741</td>
+        <td>
+          <ul>
+            
+              <li>Tue Apr 25 2023 09:13AM: IN TRANSIT from xkburnsi to 1ljfl. Wed Jul 05 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Tue Jul 25 2023 04:55PM: IN TRANSIT from xrlouder to 1ljfl</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>47</td>
+        <td>i10735696a</td>
+        <td>A000068212465</td>
+        <td>
+          <ul>
+            
+              <li>Wed Jul 19 2023 08:28AM: IN TRANSIT from xsedward to 1padm</li>
+            
+              <li>Wed Jul 19 2023 10:47AM: IN TRANSIT from xdedward to 1padm</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>48</td>
+        <td>i10979723a</td>
+        <td>A000069047795</td>
+        <td>
+          <ul>
+            
+              <li>Mon May 01 2023 05:49PM: IN TRANSIT from xsvander to osad . Tue Jul 11 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sat Jul 22 2023 11:38AM: IN TRANSIT from xsvander to osad </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>49</td>
+        <td>i11351255a</td>
+        <td>A000073754691</td>
+        <td>
+          <ul>
+            
+              <li>Tue Jul 25 2023 08:35AM: IN TRANSIT from xcgraham to nraf </li>
+            
+              <li>Tue Jul 25 2023 08:35AM: IN TRANSIT from xbjackso to nraf </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>50</td>
+        <td>i11481360a</td>
+        <td>A000072541628</td>
+        <td>
+          <ul>
+            
+              <li>Sat Jun 17 2023 10:33AM: IN TRANSIT from xtbarnes to oa   </li>
+            
+              <li>Sat Jun 17 2023 10:35AM: IN TRANSIT from xtbarnes to mtanf</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>51</td>
+        <td>i11518599a</td>
+        <td>A000074726433</td>
+        <td>
+          <ul>
+            
+              <li>Tue May 30 2023 08:25AM: IN TRANSIT from xksauer to 2ntnf</li>
+            
+              <li>Fri Jul 21 2023 03:30PM: IN TRANSIT from xjwoolum to 2ntnf</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>52</td>
+        <td>i11875135a</td>
+        <td>A000078214147</td>
+        <td>
+          <ul>
+            
+              <li>Fri Mar 17 2023 09:40AM: IN TRANSIT from xkwillar to 1w   . Sat May 27 2023 04:00AM: IN TRANSIT TOO LONG</li>
+            
+              <li>Mon Jul 24 2023 11:55AM: IN TRANSIT from xkheinde to ge   </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>53</td>
+        <td>i12015120a</td>
+        <td>A000079323004</td>
+        <td>
+          <ul>
+            
+              <li>Wed Apr 12 2023 03:25PM: IN TRANSIT from xnrschk3 to grw  . Thu Jun 22 2023: IN TRANSIT TOO LONG</li>
+            
+              <li>Sun Jul 23 2023 03:32PM: IN TRANSIT from xkwillar to 1padn</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>54</td>
+        <td>i12015617a</td>
+        <td>A000079326411</td>
+        <td>
+          <ul>
+            
+              <li>Wed Jul 05 2023 08:46AM: IN TRANSIT from xacox1 to 1paar</li>
+            
+              <li>Mon Jul 24 2023 11:05AM: IN TRANSIT from xsbodens to 1paar</li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>55</td>
+        <td>i12039437a</td>
+        <td>A000079408391</td>
+        <td>
+          <ul>
+            
+              <li>Tue Jul 25 2023 07:20PM: IN TRANSIT from xpbois to 2ra  </li>
+            
+              <li>Tue Jul 25 2023 07:20PM: IN TRANSIT from xkmcpher to 2ra  </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>56</td>
+        <td>i12055663a</td>
+        <td>A000079919611</td>
+        <td>
+          <ul>
+            
+              <li>Fri May 12 2023 11:45AM: IN TRANSIT from xckenned to tsaar</li>
+            
+              <li>Wed Jul 26 2023 09:35AM: IN TRANSIT from xmbambri to oa   </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>57</td>
+        <td>i12064259a</td>
+        <td>A000079539120</td>
+        <td>
+          <ul>
+            
+              <li>Wed May 17 2023 04:19PM: IN TRANSIT from xckenned to tsaar</li>
+            
+              <li>Wed Jul 26 2023 09:36AM: IN TRANSIT from xmbambri to cv   </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>58</td>
+        <td>i12098544a</td>
+        <td>A000079853323</td>
+        <td>
+          <ul>
+            
+              <li>Wed Jun 21 2023 03:49PM: IN TRANSIT from xdship to tsal </li>
+            
+              <li>Thu Jul 06 2023 09:48AM: IN TRANSIT from xpmitche to cl   </li>
+            
+          </ul>
+        </td>
+      </tr>
+    
+  </table>
+</body>
+</html>
