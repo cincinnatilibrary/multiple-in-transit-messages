@@ -3,6 +3,7 @@ config.json
 *.json
 *.csv
 *.txt
+!requirements.txt
 __pycache__
 output/*
 .ipynb_checkpoints
